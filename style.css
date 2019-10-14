@@ -327,7 +327,7 @@ section {
 	height: 600px;
 	background-color: #f7f8f7;
 	transform: rotate(9deg) skew(9deg);
-    width: calc(100% + 32px);
+    width: calc(100% + 25px);
     position: relative;
     left: -16px;
     margin-bottom: 50px;
