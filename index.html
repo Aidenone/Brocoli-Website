@@ -14,7 +14,6 @@
 	<div id="header">
 		<div id="logo">
 			<a href="#"><img src="logo-header-white.svg"></a>
-			<!-- <a href="#"><img src="logo-header-black.svg"></a> -->
 		</div>
 		<div class="transi-cache" id="transi-cache-logo"></div>
 
@@ -25,10 +24,10 @@
 				<li></li>
 			</ul>
 			<ul id="links">
-				<li><a href="#">Home</a></li>
 				<li><a href="#">Nos services</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Contacts</a></li>
+				<li><a href="#">Nos valeurs</a></li>
+				<li><a href="#">L'equipe</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
 		<div class="transi-cache" id="transi-cache-menu"></div>
@@ -53,6 +52,13 @@
 			<div class="subtitle-container">
 				<h2>CRÉATION DE SITE</h2>
 			</div>
+
+			<div class="box-container">
+				<div class="box-content"></div>
+				<div class="box-content"></div>
+				<div class="box-content"></div>
+				<div class="box-content"></div>
+			</div>
 			
 		</div>
 
@@ -60,7 +66,80 @@
 			<div class="subtitle-container">
 				<h2>COMMUNICATION DIGITALE</h2>
 			</div>
+
+			<div class="box-container">
+				<div class="box-content"></div>
+				<div class="box-content"></div>
+				<div class="box-content"></div>
+				<div class="box-content"></div>
+			</div>
 		</div>
+	</section>
+
+	<section id="team">
+		<div class="title-container moved">
+			<h1>L'ÉQUIPE</h1>
+		</div>
+		
+		<div class="container">
+			<div class="team-member moved">
+				<img src="./thomas.png">
+				<div class="content">
+					<div class="name">THOMAS VIRZI</div>
+					<div class="shadow"></div>
+					<p>
+						Après un IUT MMI (Métiers du Multimédia et de l’Internet), Il a obtenu une licence professionnelle de gestion de projets aux Gobelins. Enfin, il a été diplômé d’un master en innovation et marketing digital à la Web School Factory.<br><br>
+						Il a effectué 1 an en agence de communication crossmédia et 1 an dans l’incubateur #LePlateau de la Société Générale. Cette dernière expérience lui a permit de travailler avec de nombreuses startups.
+					</p>
+				</div>
+			</div>
+			<div class="team-member moved">
+				<img src="./antoine.png">
+				<div class="content">
+					<div class="name">ANTOINE LUCAS</div>
+					<div class="shadow"></div>
+					<p>
+						Il a été développeur durant 3 années dans l’agence Web Italic.<br><br>
+						Il a obtenu un master en ingénierie du web à l’ESGI ainsi qu’un bachelor web et mobilité à l’ECE TECH. Enfin, comme Thomas, il a commencé par un IUT Métier du Multimédia et de l’Internet.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h1>CONTACT</h1>
+
+		<div id="contact-input">
+			<div>
+				<label>Renseigner votre adresse mail :</label>
+				<input type="text" id="contact-mail">
+			</div>
+			
+			<div>
+				<label>Le nom de votre entreprise :</label>
+				<input type="text" id="contact-name">
+			</div>
+		</div>
+		
+
+		<div class="formfield-select">
+
+			<label>Votre demande :</label>
+			
+			<div class="formfield-select--container">
+				<select id="contact-subject">
+				    <option value="test1">test1</option>
+				    <option value="test2">test2</option>
+				    <option value="test3">test3</option>
+				</select>
+			</div>
+		</div>
+
+		<label>Plus d'informations :</label>
+		<textarea id="contact-message" rows="11"></textarea>
+
+		<button id="contact-submit">ENVOYER</button>
 	</section>
 
 	<footer>

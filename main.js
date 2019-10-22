@@ -5,15 +5,39 @@
   		window.scrollTo(0, 0);
 	}
 
-	window.onscroll = function (e) {  
+	window.onscroll = function (e) {
+
 		if(window.scrollY > 0) {
 			document.getElementById("agency").classList.remove("hidden");
+		}
+		if(window.scrollY == 0) {
+			document.getElementById("agency").classList.add("hidden");
 		}
 		if(window.scrollY > 60) {
 			document.getElementById("header").classList.add("shadow");
 		} else {
 			document.getElementById("header").classList.remove("shadow");
 		}
+	    
+	    const element = document.getElementById('team')
+	    const elementTop = element.getBoundingClientRect().top;
+	    
+	    if(elementTop < 210) {
+	    	let elements = document.getElementsByClassName("moved");
+		    while(elements.length > 0){
+		        elements[0].classList.add("unmoved");
+		        elements[0].classList.remove("moved");
+		    }
+	    }
+
+	    if(elementTop > 210) {
+	    	let elements = document.getElementsByClassName("unmoved");
+		    while(elements.length > 0){
+		        elements[0].classList.add("moved");
+		        elements[0].classList.remove("unmoved");
+		    }
+	    }
+	    
 	} 
 
 	function animPremenuContent() {
