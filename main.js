@@ -67,8 +67,8 @@
 	setTimeout(showElem, 3150);
 
 	function menu(){
-		var menu = document.querySelector("#menu");
-		var links = document.querySelector("#links");
+		let menu = document.querySelector("#menu");
+		let links = document.querySelector("#links");
 
 		menu.addEventListener("click",function(e){
 			console.log("click");
@@ -83,6 +83,14 @@
 		});
 	}
 	menu();
+
+	// let plus = document.getElementsByClassName("plus-content");
+	// for(var i = 0; i < plus.length; i++) {
+ //        var p = plus[i];
+ //        p.onclick = function() {
+ //            alert('ho ho ho');
+ //        }
+ //    }
 
 	console.log("done");
 })();
